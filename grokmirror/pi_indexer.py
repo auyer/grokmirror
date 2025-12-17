@@ -253,7 +253,7 @@ def get_git_pi_dir(opts, fullpath: str) -> Tuple[str, str]:
 
 def cmd_init(opts):
     if opts.inboxdir:
-        inboxdirs = get_inboxdirs(opts.inboxdir)
+        inboxdirs = get_inboxdirs([opts.inboxdir])
         if opts.forceinit:
             inboxdir = list(inboxdirs)[0] # get first element from the set
             gdir, pdir = get_git_pi_dir(opts, inboxdir)
