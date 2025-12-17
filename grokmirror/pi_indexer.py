@@ -3,6 +3,8 @@
 #
 # A hook to properly initialize and index mirrored public-inbox repositories.
 
+__author__ = "Konstantin Ryabitsev <konstantin@linuxfoundation.org>"
+
 import logging
 import os
 import sys
